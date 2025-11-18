@@ -10,170 +10,33 @@
 /* google fonts */
 
 /* adding base style ---------- */
-:root {
-  --clr-bg: hwb(240 93% 3%);
-  --clr-text: rgb(1, 15, 64);
-  --clr-link: rgb(8, 56, 214);
+/* -------------------------- */
+/*  DESKTOP (>=1024px)        */
+/* -------------------------- */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
 
-  --gap: 50px;
-  --margin-sm: 10px;
-  --margin-md: 15px;
-  --margin-bg: 30px;
-}
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  .header img {
+    width: 160px;
+  }
 }
 
 body {
- /* font-family: "Poppins", sans-serif;*/
- font-family: "Quicksand", sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.5;
-
-  background-color: var(--clr-bg);
+  display: flex;
+  justify-content: center;  /* canh ngang */
+  align-items: center;      /* canh dọc */
+  min-height: 100vh;        /* full chiều cao màn hình */
+  flex-direction: column;
 }
-
-h2 {
-  line-height: 1.2;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: #0067b8;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 80%;
-  height: auto;
-  vertical-align: baseline;
-}
-
-
-/*end base*/
-.container{
-	width:950px;
-	max-width:95%;
-	padding:0 10px;
-	margin:0 auto;
-	
-}
-
-
-
-/*ends global*/
-main{
-	width:100%;
-	height:auto;
-	padding:50px 0;
-	
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	
-}
-
-
-.container{
-	display:grid;
-	grid-template-columns:repeat(1, 1fr);
-	gap:var(--gap);
-}
-
-.about-me{
-	width:335px;
-	order:1;
-	color:var(--clr-text);
-
-}
-
-.about-me .name{
-	/*font-size:1.8rem;*/
-
-	font-size:18px;
-	margin-bottom:var(--margin-bg);
-}
-
-.about-me .work-title{
-	font-weight:500;
-	line-height:1.6;
-	margin-bottom:var(--margin-md);
-}
-
-
-.about-me .smalltalk{
-	font-weight:500;
-	margin-bottom:var(--margin-bg);
-}
-
-
-.about-me .email{
-	margin-bottom:var(--margin-bg);
-	font-weight: 500;
-}
-
-
-.about-me .email a{
-/*	font-size:0.9rem;*/
-font-size:18px;
-	font-weight:500;
-	margin-top:5px;
-}
-
-
-.about-me .signature{
-font-family:"Dancing Script", cursive;
-
-/*font-family: "Quicksand", sans-serif;*/
-/*	font-size:2rem;*/
-
-
-font-size:50px;
-	font-weight:500;
-	margin-bottom:var(--margin-bg);
-}
-
-.about-me .creator{
-	margin-bottom:var(--margin-bg);
-	font-weight: 500;
-	font-size: 18px;
-}
-
-.about-me .connect{
-	width:335px;
-	display:flex;
-	align-items:center;
-	justify-content:space-between;
-
-	font-size: 25px;
-    padding: 0px 15px 0 0;
-
-}
-
-
-.profile-pic{
-	width:335px;
-	order:2;
-	text-align:center;
-	
-}
-
-
-.profile-pic img{
-	width:auto;
-	height:300px;
-	box-shadow:-12px 12px 0 0 #0067b8;
-	
-}
-
 
 
 
