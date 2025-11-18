@@ -1,0 +1,182 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+ font-family: 'Poppins', sans-serif; */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+ /*font-family: 'Dancing Script', cursive; */
+/* google fonts */
+
+/* adding base style ---------- */
+:root {
+  --clr-bg: hwb(240 93% 3%);
+  --clr-text: rgb(1, 15, 64);
+  --clr-link: rgb(8, 56, 214);
+
+  --gap: 50px;
+  --margin-sm: 10px;
+  --margin-md: 15px;
+  --margin-bg: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+ /* font-family: "Poppins", sans-serif;*/
+ font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+
+  background-color: var(--clr-bg);
+}
+
+h2 {
+  line-height: 1.2;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #0067b8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+
+/*end base*/
+.container{
+	width:950px;
+	max-width:95%;
+	padding:0 10px;
+	margin:0 auto;
+	
+}
+
+
+
+/*ends global*/
+main{
+	width:100%;
+	height:auto;
+	padding:50px 0;
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+
+.container{
+	display:grid;
+	grid-template-columns:repeat(1, 1fr);
+	gap:var(--gap);
+}
+
+.about-me{
+	width:335px;
+	order:1;
+	color:var(--clr-text);
+
+}
+
+.about-me .name{
+	/*font-size:1.8rem;*/
+
+	font-size:18px;
+	margin-bottom:var(--margin-bg);
+}
+
+.about-me .work-title{
+	font-weight:500;
+	line-height:1.6;
+	margin-bottom:var(--margin-md);
+}
+
+
+.about-me .smalltalk{
+	font-weight:500;
+	margin-bottom:var(--margin-bg);
+}
+
+
+.about-me .email{
+	margin-bottom:var(--margin-bg);
+	font-weight: 500;
+}
+
+
+.about-me .email a{
+/*	font-size:0.9rem;*/
+font-size:18px;
+	font-weight:500;
+	margin-top:5px;
+}
+
+
+.about-me .signature{
+font-family:"Dancing Script", cursive;
+
+/*font-family: "Quicksand", sans-serif;*/
+/*	font-size:2rem;*/
+
+
+font-size:50px;
+	font-weight:500;
+	margin-bottom:var(--margin-bg);
+}
+
+.about-me .creator{
+	margin-bottom:var(--margin-bg);
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.about-me .connect{
+	width:335px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+
+	font-size: 25px;
+    padding: 0px 15px 0 0;
+
+}
+
+
+.profile-pic{
+	width:335px;
+	order:2;
+	text-align:center;
+	
+}
+
+
+.profile-pic img{
+	width:auto;
+	height:300px;
+	box-shadow:-12px 12px 0 0 #0067b8;
+	
+}
+
+
+
+
+/* repeated style ---------- */
+
+/* add main style from here ---------- */
