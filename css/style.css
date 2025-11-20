@@ -188,7 +188,20 @@ a:hover {
 
 
 
-    .section ul {
-    grid-template-columns: 1fr; /* 1 cột ở mobile */
+
+
+
+
+
+
+  /* Chỉ khi màn hình rất nhỏ (≤ 320px) mới 1 cột */
+@media (max-width: 320px) {
+  .section ul {
+    grid-template-columns: 1fr;
   }
+}
+
+
+
+
 }
